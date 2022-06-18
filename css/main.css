@@ -1,0 +1,104 @@
+header {
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 9999999;
+  font-size: 18px;
+  top: 0;
+  border-bottom: 1px solid #24242e;
+  background: rgba(19, 19, 33, 0.5);
+  backdrop-filter: saturate(180%) blur(20px);
+  font-family: "vogue";
+}
+
+.logout {
+  cursor: pointer;
+}
+
+.mainSection {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.mainArticle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.todoListContainer,
+.otherContent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 600px;
+  height: 849px;
+  border: 1px solid #3e3e50;
+  border-radius: 350px 350px 0 0;
+}
+
+.todoListContents > form > input {
+  width: 300px;
+  font-size: 20px;
+  margin-top: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #5a5a74;
+  background: transparent;
+  color: white;
+  caret-color: white;
+  text-align: center;
+}
+
+.todoListContents > form > input:focus {
+  outline: none;
+}
+
+.todoListContents > ul {
+  margin-top: 20px;
+}
+
+.todoListContents > ul > li {
+  width: 300px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todoListContents > ul > li > span {
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.todoListContents > ul > li > button {
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.otherContent > span {
+  font-size: 25px;
+}
+
+.otherContent > span:first-child {
+  margin-bottom: 10px;
+}
+
+.otherContent::before {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  content: url("../img/rightFlower.png");
+}

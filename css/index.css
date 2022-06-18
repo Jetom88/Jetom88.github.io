@@ -1,0 +1,68 @@
+.loginSection {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.loginArticle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #3e3e50;
+  padding: 300px 500px;
+}
+
+.loginArticle::after {
+  position: absolute;
+  top: -50px;
+  left: -45px;
+  content: url("../img/bg-flower.png");
+}
+
+.loginArticle::before {
+  position: absolute;
+  bottom: -60px;
+  right: -50px;
+  content: url("../img/bg-flower2.png");
+}
+
+.point {
+  position: absolute;
+  opacity: 0.2;
+  margin-top: -250px;
+}
+
+.loginName {
+  position: relative;
+  font-size: 40px;
+  text-align: center;
+  font-family: "vogue";
+  letter-spacing: 1px;
+}
+
+.inputText {
+  width: 340px;
+  font-size: 25px;
+  margin-top: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #5a5a74;
+  background: transparent;
+  color: white;
+  caret-color: white;
+  text-align: center;
+}
+
+.inputText:focus {
+  outline: none;
+}
+
+.loginArticle > p {
+  margin-top: 25px;
+  opacity: 0.3;
+}
