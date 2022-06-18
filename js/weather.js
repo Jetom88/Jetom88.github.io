@@ -7,8 +7,8 @@ const onGeoSuccess = (position) => {
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
-      const weather = document.querySelector(".otherContent span:first-child");
-      const city = document.querySelector(".otherContent span:last-child");
+      const weather = document.querySelector(".weather");
+      const city = document.querySelector(".city");
       city.innerText = data.name;
       weather.innerText = `${data.weather[0].main} / ${data.main.temp.toFixed(
         1
