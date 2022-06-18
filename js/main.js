@@ -19,14 +19,9 @@ const showClock = () => {
 setInterval(showClock, 1000);
 
 const logoutLogic = () => {
-  if (
-    !confirm(
-      `All information is initialized upon logout.\nWould you like to continue?`
-    )
-  ) {
+  if (!confirm("Are you sure you want to logout?")) {
     return null;
   } else {
-    localStorage.clear();
     window.location.href = "./index.html";
   }
 };
